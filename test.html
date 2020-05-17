@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inputyper</title>
+
+    <style>
+      form {
+        display: flex;
+        max-width: 300px;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>inputyper</h1>
+    </header>
+
+    <hr />
+
+    <form action="">
+      <label for="randomInput">randomInput</label>
+      <input type="text" name="randomInput" id="randomInput" />
+    </form>
+
+    <script src="./index.js"></script>
+    <script>
+      const randomIntegerStrings = [...Array(100).keys()].map((key) =>
+        String(Math.round((Math.random() * 10000) ^ key))
+      );
+
+      const inputTypingEffect = PlaceholderTypingEffect({
+        element: document.getElementById("randomInput"),
+        strings: randomIntegerStrings,
+        prepend: 'Random Number Is: "',
+        append: '"',
+      }).begin({ delay: 1000 });
+    </script>
+  </body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/gh/s0kil/inputyper/index.min.js"></script>
