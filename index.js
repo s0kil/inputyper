@@ -6,8 +6,8 @@ const PlaceholderTypingEffect = ({
   nextDelay = 2000,
   nextRandom = true,
   keystrokeDelay = 100,
-} = options) => ({
-  begin: ({ delay: beginDelay } = options) => {
+}) => ({
+  begin: ({ delay: beginDelay } = { delay: 0 }) => {
     const typingEffect = () => {
       let characters = (() => {
         if (nextRandom)
