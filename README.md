@@ -9,7 +9,7 @@ Micro Library For Input Placeholder Typing Effect
 ### Install
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/s0kil/inputyper@258056e53f1c17236e7a6f1d222cb66105f25c93/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/s0kil/inputyper@6e03fc2fe660bf1c75fc70eb320c0f6dd77ed61e/index.js"></script>
 ```
 
 ## API
