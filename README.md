@@ -2,6 +2,8 @@
 
 Micro Library For Input Placeholder Typing Effect
 
+[Live Demo](https://raw.githack.com/s0kil/inputyper/master/test.html)
+
 ## Prerequisite
 
 ### Install
